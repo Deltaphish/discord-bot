@@ -1,0 +1,14 @@
+{
+  "name": "dibot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.jd"
+  },
+  "author": "Joakim",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^8.0.0"
+  }
+}
