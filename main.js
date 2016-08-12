@@ -1,6 +1,9 @@
 var Discord = require("discord.js");
 var request = require("request");
 
+var userName = "Your bots username"
+var password = "Your bots password"
+
 var bat = " nananananananananananananananananananananananananana, Batman, nananananananananananananananananananananananananana Batman";
 
 
@@ -72,5 +75,5 @@ mybot.on("message", function(message) {
 });
 
 console.log("Server Started");
-mybot.login("joakimanderlind2@gmail.com","portal0320");
+mybot.login(userName,password);
 
