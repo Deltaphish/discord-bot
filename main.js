@@ -1,8 +1,10 @@
 var Discord = require("discord.js");
 var request = require("request");
 
-var userName = "Your bots username"
-var password = "Your bots password"
+var lolApi = "Your lol apikey here";
+
+var userName = "Your bots username";
+var password = "Your bots password";
 
 var bat = " nananananananananananananananananananananananananana, Batman, nananananananananananananananananananananananananana Batman";
 
@@ -33,7 +35,7 @@ mybot.on("message", function(message) {
     else if(message.content.includes("#lol")) {
 		var temp = message.content.substring(5);
 		console.log(temp);
-		request("https://euw.api.pvp.net/api/lol/euw/v1.4/summoner/by-name/"+temp+"?api_key=333368e6-27a7-4af0-b1c7-d4597dd621e5",function(error,response,body){
+		request("https://euw.api.pvp.net/api/lol/euw/v1.4/summoner/by-name/"+temp+"?api_key="+lolApi,function(error,response,body){
 		if(response.statusCode != 200 && !error){
 		console.log("nop");
 		mybot.sendMessage(message.channel,"User not found",{tts:true});
